@@ -54,7 +54,7 @@ def Addmenu():
         cursor.execute(insert_sql, (first_name,last_name,address,postcode,city,state,phone_number,address))
         db_conn.commit()
         name = "" + first_name + " " + last_name
-        Upload image file in S3 
+       # Upload image file in S3 #
         image_name_in_s3 = "Menu of_" + str(center_name) + "_image_file"
         s3 = boto3.resource('s3')
 
